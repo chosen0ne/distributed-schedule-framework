@@ -10,7 +10,7 @@ import mtxscheduler
 
 sched = mtxscheduler.MutexScheduler()
 
-mongo = pymongo.Connection(host = '220.181.29.157', port = 27163)
+mongo = pymongo.Connection(host = '127.0.0.1', port = 27017)
 lock_store = mongo['lockstore']['locks']
 
 def lock():

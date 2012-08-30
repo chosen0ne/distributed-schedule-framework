@@ -9,7 +9,7 @@ import mtxscheduler
 
 sched = mtxscheduler.MutexScheduler()
 
-pool = redis.ConnectionPool(host = '220.181.29.148', port = 9211)
+pool = redis.ConnectionPool(host = '127.0.0.1', port = 6379)
 lock_store = redis.Redis(connection_pool = pool)
 
 def lock():
